@@ -51,8 +51,10 @@ class ProductApi(APIView):
 
 
     # function for deleting prticular data from the database
-    def delete(self, request, pk, format=None):
-        id = pk
-        prod = Product.objects.get(pk=id)
-        prod.delete()
-        return Response({'msg':'Data Deleted'}, status=status.HTTP_204_NO_CONTENT)
+    def delete(self, request, pk=None, format=None):
+        if pk is not None:
+            id = pk
+            prod = Product.objects.get(pk=id)
+            prod.delete()
+            return Response({'msg':'Data Deleted'}, status=status.HTTP_204_NO_CONTENT)
+        return Response({'msg':'ID is Not Provided. Please Provide the id of the product which you wanted to delete.'}, status=status.HTTP_400_BAD_REQUEST)
