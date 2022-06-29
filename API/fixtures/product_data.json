@@ -1,0 +1,38 @@
+[
+    {
+        "model":"API.Product",
+        "pk": 1,
+        "fields":{
+            "product_name":"Canon Camera",
+            "category":"electronics",
+            "price":"35200",
+            "description":"excellent Picture quality, black colour",
+            "image":"",
+            "date":"2022-06-29"
+        }
+    },
+    {
+        "model":"API.Product",
+        "pk": 2,
+        "fields":{
+            "product_name":"Fossil Watch",
+            "category":"electronics",
+            "price":"1050",
+            "description":"beautiful stylish watch for men, silver colour",
+            "image":"",
+            "date":"2022-06-29"
+        }
+    },
+    {
+        "model":"API.Product",
+        "pk": 3,
+        "fields":{
+            "product_name":"poem perfume",
+            "category":"fashion",
+            "price":"550",
+            "description":"lancome paris perfume",
+            "image":"",
+            "date":"2022-06-29"
+        }
+    }
+]
